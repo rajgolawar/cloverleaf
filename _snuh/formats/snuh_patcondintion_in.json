@@ -1,0 +1,38 @@
+{
+  "type" : "object",
+  "properties" : {
+    "FILE_DATETIME" : {
+      "type" : "string"
+    },
+    "DIAGNOSIS_ID" : {
+      "type" : "string"
+    },
+    "PATIENT_ID" : {
+      "type" : "string"
+    },
+    "ENCOUNTER_ID" : {
+      "type" : "string"
+    },
+    "RECORDED_DATE" : {
+      "type" : "string"
+    },
+    "ONSET_DATE" : {
+      "type" : "string"
+    },
+    "ICD10_CODE" : {
+      "type" : "string"
+    },
+    "ICD10_NAME" : {
+      "type" : "string"
+    },
+    "SEVERITY" : {
+      "type" : "string"
+    },
+    "SITE" : {
+      "type" : "string"
+    }
+  },
+  "$schema" : "http://json-schema.org/draft-04/schema#",
+  "ordering" : false,
+  "validationcheck" : true
+}
