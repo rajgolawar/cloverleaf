@@ -1,0 +1,551 @@
+# Translation lookup table
+#
+prologue
+    who:	josh.myers
+    date:	March 22, 2018 7:39:39 AM PDT
+    outname:	output
+    inname:	input
+    bidir:	0
+    type:	tbl
+    version:	6.0
+end_prologue
+#
+dflt_passthrough=0
+dflt=Unknown
+dflt_encoded=false
+#
+]
+Unknown
+encoded=0,0
+#
+Abstract
+Other
+encoded=0,0
+#
+Admission Orders
+Pre-admit
+encoded=0,0
+#
+ADT CHI BED REQUEST NOTICE
+Not Applicable
+encoded=0,0
+#
+Allied Health
+Other
+encoded=0,0
+#
+Ambulatory PCA
+Ambulatory
+encoded=0,0
+#
+Ambulatory Recurring PCA
+Ambulatory
+encoded=0,0
+#
+Ancillary Orders
+Other
+encoded=0,0
+#
+Ancillary Results
+Other
+encoded=0,0
+#
+Anesthesia
+Inpatient
+encoded=0,0
+#
+Anesthesia Event
+Inpatient
+encoded=0,0
+#
+Anti-coag visit
+Recurring
+encoded=0,0
+#
+Appointment
+Other
+encoded=0,0
+#
+BH Wait List
+Other
+encoded=0,0
+#
+Billing Encounter
+Other
+encoded=0,0
+#
+Blood Transfusion
+Other
+encoded=0,0
+#
+BPA
+Other
+encoded=0,0
+#
+Canceled
+Not Applicable
+encoded=0,0
+#
+Cardiac Rehab Session
+Other
+encoded=0,0
+#
+Care Management Call
+Virtual
+encoded=0,0
+#
+Case Management
+Other
+encoded=0,0
+#
+Charging Only
+Commercial Account
+encoded=0,0
+#
+Clerical Orders
+Other
+encoded=0,0
+#
+Clinic/Cancer Center
+Ambulatory
+encoded=0,0
+#
+Clinical Documentation Only
+Other
+encoded=0,0
+#
+Clinical Support
+Other
+encoded=0,0
+#
+Clinic Imaging
+Ambulatory
+encoded=0,0
+#
+Committee Review
+Other
+encoded=0,0
+#
+Community Orders
+Other
+encoded=0,0
+#
+Confidential
+Other
+encoded=0,0
+#
+Consent Form
+Other
+encoded=0,0
+#
+Contact Moved
+Not Applicable
+encoded=0,0
+#
+Deleted
+Not Applicable
+encoded=0,0
+#
+Device Check
+Other
+encoded=0,0
+#
+Documentation
+Other
+encoded=0,0
+#
+Documentation Retail
+Other
+encoded=0,0
+#
+E-Consult
+Virtual
+encoded=0,0
+#
+E-Consult Community Order
+Virtual
+encoded=0,0
+#
+ED Telemedicine
+Virtual
+encoded=0,0
+#
+Education
+Other
+encoded=0,0
+#
+EMPTY
+Unknown
+encoded=0,0
+#
+EpicOnHand Encounter
+Other
+encoded=0,0
+#
+Episode Changes
+Other
+encoded=0,0
+#
+E-Prescribe
+Virtual
+encoded=0,0
+#
+Erroneous Encounter
+Not Applicable
+encoded=0,0
+#
+Erroneous Telephone Encounter
+Not Applicable
+encoded=0,0
+#
+Evaluation
+Pre-admit
+encoded=0,0
+#
+E-Visit
+Virtual
+encoded=0,0
+#
+External Contact
+Other
+encoded=0,0
+#
+External Hospital Admission
+Inpatient
+encoded=0,0
+#
+Follow-Up
+Ambulatory
+encoded=0,0
+#
+Health Maintenance Letter
+Other
+encoded=0,0
+#
+Historical Encounter
+Other
+encoded=0,0
+#
+Historical Scan Encounter
+Other
+encoded=0,0
+#
+History
+Other
+encoded=0,0
+#
+Home Care Update
+Home
+encoded=0,0
+#
+Home Care VIsit
+Home
+encoded=0,0
+#
+Home Dialysis Telephone Call
+Virtual
+encoded=0,0
+#
+Home Health Admission
+Home
+encoded=0,0
+#
+Hospice Admission
+Inpatient
+encoded=0,0
+#
+Hospital
+Inpatient
+encoded=0,0
+#
+Hospital Encounter
+Inpatient
+encoded=0,0
+#
+Immunization
+Ambulatory
+encoded=0,0
+#
+Induction
+Obstetrics
+encoded=0,0
+#
+Infusion
+Recurring
+encoded=0,0
+#
+Initial consult
+Other
+encoded=0,0
+#
+Initial Consult
+Other
+encoded=0,0
+#
+Initial Prenatal
+Obstetrics
+encoded=0,0
+#
+Injection
+Other
+encoded=0,0
+#
+Lab
+Other
+encoded=0,0
+#
+Lab Requisition
+Other
+encoded=0,0
+#
+Lab Transcription
+Other
+encoded=0,0
+#
+Lactation Consult
+Obstetrics
+encoded=0,0
+#
+Lactation Encounter
+Obstetrics
+encoded=0,0
+#
+Letter (Out)
+Other
+encoded=0,0
+#
+Meds Only (Web)
+Other
+encoded=0,0
+#
+Meds Void (Web)
+Other
+encoded=0,0
+#
+Mobile Order Only
+Other
+encoded=0,0
+#
+Mother Baby Link
+Obstetrics
+encoded=0,0
+#
+NST
+Obstetrics
+encoded=0,0
+#
+Nurse Only
+Other
+encoded=0,0
+#
+Nurse Triage
+Other
+encoded=0,0
+#
+Nursing/Home Visit
+Home
+encoded=0,0
+#
+Nutrition
+Other
+encoded=0,0
+#
+OB Abstract
+Obstetrics
+encoded=0,0
+#
+Office Visit
+Ambulatory
+encoded=0,0
+#
+O- Outpatient
+Ambulatory
+encoded=0,0
+#
+Ophth Exam
+Other
+encoded=0,0
+#
+Orders Only
+Other
+encoded=0,0
+#
+Order Transcription
+Other
+encoded=0,0
+#
+Outside Records
+Other
+encoded=0,0
+#
+Patient Care Review
+Other
+encoded=0,0
+#
+Patient Email
+Virtual
+encoded=0,0
+#
+Patient Outreach
+Other
+encoded=0,0
+#
+Patient Web Update
+Other
+encoded=0,0
+#
+PCP/Clinic Change
+Other
+encoded=0,0
+#
+PCPT NST
+Unknown
+encoded=0,0
+#
+PCPT Nurse Visit
+Unknown
+encoded=0,0
+#
+PCPT Office Visit
+Unknown
+encoded=0,0
+#
+PCPT Routine Ante Partum
+Unknown
+encoded=0,0
+#
+PCPT Ultrasound
+Unknown
+encoded=0,0
+#
+Pharmacy Visit
+Ambulatory
+encoded=0,0
+#
+Post Mortem Documentation
+Other
+encoded=0,0
+#
+Postpartum Visit
+Obstetrics
+encoded=0,0
+#
+Pre-Evaluation
+Pre-admit
+encoded=0,0
+#
+Pre-op/Pre-procedure Orders
+Pre-admit
+encoded=0,0
+#
+Prep for Surgery
+Pre-admit
+encoded=0,0
+#
+Procedural Consult
+Pre-admit
+encoded=0,0
+#
+Procedure Pass
+Other
+encoded=0,0
+#
+Procedure visit
+Other
+encoded=0,0
+#
+Questionnaire Series Submission
+Other
+encoded=0,0
+#
+Referral
+Other
+encoded=0,0
+#
+Refill
+Other
+encoded=0,0
+#
+Registration
+Other
+encoded=0,0
+#
+Release of Information
+Not Applicable
+encoded=0,0
+#
+Research Encounter
+Other
+encoded=0,0
+#
+Resolute Professional Billing Hospital Prof Fee
+Other
+encoded=0,0
+#
+Routine Prenatal
+Obstetrics
+encoded=0,0
+#
+R-Recurring Outpatient
+Recurring
+encoded=0,0
+#
+Rx Refill Authorize
+Other
+encoded=0,0
+#
+Scanned Document
+Not Applicable
+encoded=0,0
+#
+Scanned Outreach OV
+Other
+encoded=0,0
+#
+Social Work
+Other
+encoded=0,0
+#
+Spa
+Other
+encoded=0,0
+#
+Surgery
+Inpatient
+encoded=0,0
+#
+Surgical Consult
+Pre-admit
+encoded=0,0
+#
+Telemedicine
+Virtual
+encoded=0,0
+#
+Telephone
+Virtual
+encoded=0,0
+#
+Treatment
+Recurring
+encoded=0,0
+#
+Treatment Plan
+Recurring
+encoded=0,0
+#
+Unmerge
+Not Applicable
+encoded=0,0
+#
+Update
+Not Applicable
+encoded=0,0
+#
+Wait List
+Other
+encoded=0,0
+#
+Walk-In
+Ambulatory
+encoded=0,0
