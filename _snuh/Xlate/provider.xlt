@@ -1,0 +1,152 @@
+prologue
+    xlt_infile:	vr snuh_provider_csv.vrl
+    who:	josh
+    date:	September 4, 2018 6:22:56 AM PDT
+    xlt_outfile:	json CareProvider careprovider.json
+    type:	xlt
+    version:	7.0
+end_prologue
+
+{ { OP COPY } 
+    { ERR 0 }
+    { PRE {
+        xltpMissingDataErr
+    }}
+    { IN FILE_DATETIME }
+    { OUT fields.meta.extract_date }
+}
+{ { OP IF } 
+    { ERR 0 }
+    { COND {FILE_DATETIME  eq @null} }
+    { THENBODY {
+        { { OP SUPPRESS } }
+    }}
+    { ELSEBODY {
+    }}
+}
+{ { OP IF } 
+    { ERR 0 }
+    { COND { NPI > =0} }
+    { THENBODY {
+        { { OP COPY } 
+            { ERR 2 }
+            { IN NPI }
+            { OUT fields.npi }
+        }
+    }}
+    { ELSEBODY {
+    }}
+}
+{ { OP COPY } 
+    { ERR 0 }
+    { PRE {
+        xltpMissingDataErr
+    }}
+    { IN PROVIDER_ID }
+    { OUT @prov_id }
+}
+{ { OP IF } 
+    { ERR 0 }
+    { COND {PROVIDER_ID  eq @null} }
+    { THENBODY {
+        { { OP SUPPRESS } }
+    }}
+    { ELSEBODY {
+    }}
+}
+{ { OP COPY } 
+    { ERR 0 }
+    { IN {=PROV @prov_id} }
+    { OUT fields.client_id }
+    { COPYSEP : }
+}
+{ { OP COPY } 
+    { ERR 0 }
+    { IN =Banner }
+    { OUT fields.affiliations(0) }
+}
+{ { OP COPY } 
+    { ERR 0 }
+    { IN PROVIDER_NAME }
+    { OUT fields.name }
+}
+{ { OP COPY } 
+    { ERR 0 }
+    { IN FIRST_NAME }
+    { OUT fields.first_name }
+}
+{ { OP COPY } 
+    { ERR 0 }
+    { IN LAST_NAME }
+    { OUT fields.last_name }
+}
+{ { OP TABLE } 
+    { ERR 0 }
+    { IN PROVIDER_TYPE }
+    { OUT fields.provider_type }
+    { TBL ban_provider_type.tbl }
+    { SIDE {} }
+}
+{ { OP COMMENT } 
+    { COMMENT {Only create the address components if some address field is valued} }
+}
+{ { OP IF } 
+    { REM 1 }
+    { ERR 0 }
+    { COND { STREET_ADDR  gt ="" ||  CITY  gt ="" ||   STATE  gt ="" ||   ZIPCODE  gt ="" ||   COUNTRY  gt =""} }
+    { THENBODY {
+        { { OP COPY } 
+            { ERR 0 }
+            { IN STREET_ADDR }
+            { OUT fields.addresses(0).street }
+        }
+        { { OP COPY } 
+            { ERR 0 }
+            { IN CITY }
+            { OUT fields.addresses(0).city }
+        }
+        { { OP COPY } 
+            { ERR 0 }
+            { IN STATE }
+            { OUT fields.addresses(0).state }
+        }
+        { { OP COPY } 
+            { ERR 0 }
+            { IN ZIPCODE }
+            { OUT fields.addresses(0).postal_code }
+        }
+        { { OP COPY } 
+            { ERR 0 }
+            { IN COUNTRY }
+            { OUT fields.addresses(0).country }
+        }
+    }}
+    { ELSEBODY {
+    }}
+}
+{ { OP COPY } 
+    { ERR 0 }
+    { PRE {
+        set klst [xpmmetaget $xlateId DRIVERCTL]
+                        set filepath ""; keylget klst FILENAME filepath
+                        set filename [file tail $filepath]
+                        set xlateOutVals $filename
+    }}
+    { IN @null }
+    { OUT fields.meta.source }
+}
+{ { OP COPY } 
+    { ERR 0 }
+    { IN =EDW }
+    { OUT fields.meta.source_format }
+}
+{ { OP COPY } 
+    { ERR 0 }
+    { PRE {
+        set msgid [xpmmetaget -ro $xlateId SOURCEMID]
+                        set hciSite $env(HCISITE)
+                        set xlateOutVals "$hciSite:[keylget msgid NUM]"
+    }}
+    { IN @null }
+    { OUT fields.meta.cloverleaf_id }
+}
