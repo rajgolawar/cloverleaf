@@ -1,0 +1,86 @@
+{
+  "type" : "object",
+  "properties" : {
+    "FILE_DATETIME" : {
+      "type" : "string"
+    },
+    "MRN" : {
+      "type" : "string"
+    },
+    "DOB" : {
+      "type" : "string"
+    },
+    "IS_DECEASED" : {
+      "type" : "string"
+    },
+    "DECEASED_DT_TM" : {
+      "type" : "string"
+    },
+    "CAUSE_OF_DEATH" : {
+      "type" : "string"
+    },
+    "LAST_NAME" : {
+      "type" : "string"
+    },
+    "FIRST_NAME" : {
+      "type" : "string"
+    },
+    "MIDDLE_NAME" : {
+      "type" : "string"
+    },
+    "NAME_SUFFIX" : {
+      "type" : "string"
+    },
+    "GENDER" : {
+      "type" : "string"
+    },
+    "SEX" : {
+      "type" : "string"
+    },
+    "STREET_ADDR" : {
+      "type" : "string"
+    },
+    "CITY" : {
+      "type" : "string"
+    },
+    "STATE" : {
+      "type" : "string"
+    },
+    "ZIPCODE" : {
+      "type" : "string"
+    },
+    "COUNTRY" : {
+      "type" : "string"
+    },
+    "PHONE" : {
+      "type" : "string"
+    },
+    "PRIMARY_ONCOLOGIST" : {
+      "type" : "string"
+    },
+    "MANAGING_ORGANIZATION" : {
+      "type" : "string"
+    },
+    "IS_ACTIVE" : {
+      "type" : "string"
+    },
+    "RACE" : {
+      "type" : "string"
+    },
+    "ETHINICITY" : {
+      "type" : "string"
+    },
+    "PREFERED_LANGUAGE" : {
+      "type" : "string"
+    },
+    "EMAIL" : {
+      "type" : "string"
+    },
+    "SSN" : {
+      "type" : "string"
+    }
+  },
+  "$schema" : "http://json-schema.org/draft-04/schema#",
+  "ordering" : false,
+  "validationcheck" : true
+}
